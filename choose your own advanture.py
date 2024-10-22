@@ -19,7 +19,7 @@ elif answer == "right":
     answer = input(f"{name} you have come to an unsteady bridge, do you want to cross it or head back? (cross/back)? ")
     
     if answer == "back":
-        print(f"{name} you got back and lost. ")
+        print(f"{name} you got back and lost. pls try again ")
         
     elif answer == "cross":
         answer = input(f"{name} you just crossed and met strangers. Do you want to talk to them? (yes/no)? ")
