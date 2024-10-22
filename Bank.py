@@ -37,7 +37,7 @@ class Bank_account:
             account_number = int(input("Enter account number "))
             password = input("Enter password ")
             if account_number != self.__account_number:
-                print(f"The account number{account_number} is not valid")
+                print(f"{account_number} is not valid")
             elif password != self.__password:
                 print(f"the password is Invalid")
             else:
@@ -66,7 +66,7 @@ class Bank_account:
 
     def transfer(self, amount: float, other_bank: str, other_account_number: int):
         if len(str(other_account_number)) != 10:
-            print("Account number must be 10 digits")
+            print("account number must be 10 digits")
         elif amount < 0:
             print("Invalid amount")
         elif amount > self.__account_balance:
@@ -87,5 +87,5 @@ account1 = Bank_account("Godfrey Obruche", 2263285695,
 
 #account1.password = input("enter a new password ")
 #account1.change_password = input("Enter a new password ")
-account1.change_password = 'myrealname'
+account1.change_password = 'mechanics'
 account1.login()
