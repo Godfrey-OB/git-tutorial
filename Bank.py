@@ -83,9 +83,9 @@ class Bank_account:
 
 
 account1 = Bank_account("Godfrey Obruche", 2263285695, 
-                        "savings account", 200000, "engrprof")
+                        "savings account", 500000, "engrprof")
 
 #account1.password = input("enter a new password ")
 #account1.change_password = input("Enter a new password ")
-account1.change_password = 'mechanics'
+account1.change_password = 'myrealname1'
 account1.login()
