@@ -5,7 +5,7 @@ import math
 root=Tk()
 root.title("Godfrey's 0.1")
 root.config(bg='grey')
-root.geometry('580x380+80+80')
+root.geometry('480x380+80+80')
 screen=Entry(root, font=('arial', 20, 'bold'), bg='lightblue', fg='darkblue', bd=10, relief=SUNKEN, width=22)
 screen.grid(row=0, column=0, columnspan=8, pady=1, padx=1)
 
@@ -44,7 +44,7 @@ def click(button):
             answer=round(math.cos(math.radians(eval(display))), 5)
         elif button=='tanθ':
             answer=round(math.tan(math.radians(eval(display))), 5)       
-        elif button=='sinθ':
+        elif button=='sinθ':     
             answer=round(math.sin(math.radians(eval(display))), 5)            
         elif button=='2π':
             answer=round(2*math.pi, 4)      
@@ -74,7 +74,7 @@ def click(button):
         elif button=='log':
             answer=round(math.log10(eval(display)), 4)        
         elif button=='x!':
-            answer=math.factorial(display)           
+            answer=math.factorial(eval(display))           
         elif button==chr(247):
             screen.insert(END, "/")
             return              
