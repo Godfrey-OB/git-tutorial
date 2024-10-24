@@ -75,7 +75,7 @@ class Bank_account:
             self.__account_balance -= amount
             print(
                 f"Your transfer of {amount} to {other_bank} : {other_account_number} is successful."
-                f"Balance: {self.__account_balance}"
+                f"Your balance: {self.__account_balance}"
             )
 
     def check_balance(self):
@@ -87,5 +87,5 @@ account1 = Bank_account("Godfrey Obruche", 2263285695,
 
 #account1.password = input("enter a new password ")
 #account1.change_password = input("Enter a new password ")
-account1.change_password = 'myrealname1'
+account1.change_password = 'mechanics'
 account1.login()
